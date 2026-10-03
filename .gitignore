@@ -1,0 +1,6 @@
+# EnvQL Git Ignore
+envql.key
+*.key
+.env
+__pycache__/
+*.pyc
