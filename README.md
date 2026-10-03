@@ -42,10 +42,10 @@ debug_mode: Boolean @default(false)
 ## 🚀 Guía de Inicio Rápido
 
 ### 1. Requisitos previos
-Asegúrate de tener Python instalado y la librería de criptografía:
+Instala las dependencias del proyecto:
 
 ```bash
-pip install cryptography
+pip install -r requirements.txt
 ```
 
 ### 2. Inicializar el proyecto
@@ -59,13 +59,27 @@ python envql_cli.py key:generate
 python envql_cli.py encrypt --input schema.envql --output schema.envql.enc
 ```
 
+### 4. Generar tipos para tu IDE (DX)
+```bash
+# Para proyectos TypeScript / Node.js (genera env.d.ts)
+python envql_cli.py generate --target typescript
+
+# Para proyectos Python (genera env_config.py con Dataclass tipada)
+python envql_cli.py generate --target python
+```
+
+### 5. Validar y ejecutar la aplicación (Fail-Fast)
+```bash
+python envql_cli.py run python app.py
+```
+
 ---
 
 ## 🗺️ Roadmap del Proyecto
 - [x] Motor de parseo y validación de tipos básicos (Int, String, Boolean).
 - [x] Capa de cifrado simétrico robusto (Fernet / AES-256).
-- [x] Prototipo de CLI global (init, key:generate, encrypt).
-- [ ] Compiladores de tipos para TypeScript y Python.
+- [x] Prototipo de CLI global (init, key:generate, encrypt, run).
+- [x] Compiladores de tipos para TypeScript (`env.d.ts`) y Python (`env_config.py`).
 - [ ] SDKs oficiales para Node.js, Python y Go.
 - [ ] EnvQL Registry: Panel corporativo y sincronización en la nube (Versión Enterprise).
 
