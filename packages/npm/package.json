@@ -1,0 +1,33 @@
+{
+  "name": "envql",
+  "version": "0.1.0",
+  "description": "El estándar universal para configuración tipada, segura y cifrada en Node.js y TypeScript.",
+  "main": "src/index.js",
+  "types": "src/index.d.ts",
+  "bin": {
+    "envql": "bin/envql.js"
+  },
+  "scripts": {
+    "test": "node test/test.js"
+  },
+  "keywords": [
+    "env",
+    "configuration",
+    "secrets",
+    "encryption",
+    "type-safe",
+    "fail-fast",
+    "aes-256",
+    "fernet",
+    "dotenv"
+  ],
+  "author": "Alberto Puente <japuentem@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/japuentem/envql.git"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
