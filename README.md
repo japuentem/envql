@@ -3,8 +3,9 @@
 > El estándar universal y multiplataforma para tipar, auditar y propagar configuración y secretos de forma segura.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![NPM Version](https://img.shields.io/npm/v/envql.svg?color=red)](https://www.npmjs.com/package/envql)
 [![Python Version](https://img.shields.io/badge/python-3.8%2B-blue.svg)](https://www.python.org/)
-[![Security: AES-256](https://img.shields.io/badge/security-AES--256-green.svg)](https://github.com/your-username/envql)
+[![Security: AES-256](https://img.shields.io/badge/security-AES--256-green.svg)](https://github.com/japuentem/envql)
 
 ---
 
